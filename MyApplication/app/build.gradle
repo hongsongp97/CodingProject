@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
-        applicationId "com.example.hongsonpham.login"
+        applicationId "com.example.hongsonpham.demofacebooklogin"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
@@ -19,8 +19,12 @@ android {
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -28,6 +32,4 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.facebook.android:facebook-android-sdk:4.0.0'
     testCompile 'junit:junit:4.12'
-    compile 'com.github.bumptech.glide:glide:4.0.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
 }
