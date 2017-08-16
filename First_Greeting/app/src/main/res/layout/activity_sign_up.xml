@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="Đăng Ký Tài Khoản"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnBackToMain"
+            android:background="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/back"
+            android:layout_weight="0.08" />
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Họ Tên:"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/tvName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="2dp"
+            >
+            <TextView
+                android:text="Giới Tính:"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioButton
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:text="Nam"/>
+
+            <RadioButton
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:text="Nữ"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="2dp"
+            >
+            <TextView
+                android:text="Ngày Sinh: "
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/tvBirthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="2dp"
+            >
+            <TextView
+                android:text="Gmail:"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/tvGmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="2dp"
+            >
+            <TextView
+                android:text="Phone:"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/tvPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="2dp"
+            >
+            <TextView
+                android:text= "Địa Chỉ: "
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/tvDiaChi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:text="Đăng Ký"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
